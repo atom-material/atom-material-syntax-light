@@ -52,6 +52,46 @@ atom-text-editor.is-focused, :host(.is-focused) {
         background-color: darken(@syntax-background-color, 1.5%);
     }
 }
+
+/*
+ * Language: Markup
+ */
+ [data-grammar*="gfm"]::shadow {
+     .markup.underline.link {
+         color: lighten(#ff5370, 10%);
+
+         span.punctuation {
+             color: #ff5370;
+         }
+     }
+     .markup.strike {
+         position: relative;
+         color: fade(@syntax-text-color, 50%);
+
+         &::after {
+             content: "";
+             position: absolute;
+             top: calc(50% + 4px);
+             left: 0;
+             right: 0;
+             height: 1px;
+             background-color: fade(@syntax-text-color, 20%);
+         }
+     }
+     .table .border {
+         color: fade(@syntax-text-color, 50%);
+     }
+     .markup.heading {
+         color: #82b1ff;
+     }
+     .punctuation.definition.begin, .punctuation.definition.end {
+         color: #82b1ff;
+     }
+     .punctuation.definition.begin + span:not(.function.parameter) {
+         color: lighten(#82b1ff, 5%);
+     }
+ }
+
 .variable.parameter.function {
     color: #afb8b8;
 }
