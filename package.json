@@ -2,12 +2,12 @@
   "name": "atom-material-syntax-light",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "A light syntax theme for Atom that uses Google's Material Design color palette",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/atom-material-syntax-light",
+  "repository": "https://github.com/silvestreh/atom-material-syntax-light",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
