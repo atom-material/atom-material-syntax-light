@@ -5,7 +5,9 @@
   "description": "A light syntax theme for Atom that uses Google's Material Design color palette",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "material design",
+    "material"
   ],
   "repository": "https://github.com/silvestreh/atom-material-syntax-light",
   "license": "MIT",
