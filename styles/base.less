@@ -288,3 +288,10 @@ atom-text-editor.is-focused, :host(.is-focused) {
 .meta.attribute-selector .entity.other.attribute-name.attribute {
     color: #F44336;
 }
+.bracket-matcher .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: fade(@syntax-text-color, 10%);
+    box-shadow: inset 0 -1px 0 @syntax-cursor-color;
+}
