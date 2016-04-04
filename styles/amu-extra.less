@@ -65,14 +65,25 @@ atom-text-editor.is-focused .selection .region,
     .string.quoted {
         color: #91b859;
     }
-    &.array.json .string.quoted, &.array.json .string.quoted > * {
+    &.array.json .string.quoted {
         color: #80CBC4;
+
+        > * {
+            color: currentColor;
+        }
     }
     .punctuation.separator.key-value + .string.quoted {
         color: #80CBC4;
 
         * {
-            color: #80CBC4;
+            color: currentColor;
+        }
+    }
+    &.structure.dictionary .string.quoted {
+        color: #91b859;
+
+        .punctuation.string {
+            color: currentColor;
         }
     }
 }
